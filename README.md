@@ -6,6 +6,8 @@ Try running the following commands:
 - dbt run
 - dbt test
 
+### Uploading to S3 bucket
+After a successful dbt run, container uploads manifest.json to specified s3 bucket (you must provide it via -e argument)
 
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
