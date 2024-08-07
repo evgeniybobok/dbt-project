@@ -1,4 +1,4 @@
-Welcome to your new dbt project!
+Welcome to dbt project!
 
 ### Using the project
 Try running the following command:
