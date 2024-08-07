@@ -7,7 +7,7 @@ docker run --rm -v /Users/$USER/.dbt:/.dbt --env-file .env -e DBT_COMMAND='dbt r
 ```
 
 ### Uploading to S3 bucket
-After a successful dbt run, container uploads manifest.json to specified s3 bucket (you must provide it via -e argument)
+After a successful dbt run, container uploads manifest.json to specified s3 bucket (you must provide it in ```.env``` file)
 
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
