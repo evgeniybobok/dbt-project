@@ -18,7 +18,7 @@ AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
 current_date_str = datetime.now().strftime('%Y-%m-%d')
 object_path = f'manifest/{current_date_str}/{invocation_id}'
 
-print(f'Uploading to {object_path}')
+print(f'Uploading manifest.json to {object_path}')
 s3 = boto3.client('s3',
                 aws_access_key_id=AWS_ACCESS_KEY_ID,
                 aws_secret_access_key=AWS_SECRET_ACCESS_KEY)
