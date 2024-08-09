@@ -1,7 +1,8 @@
 import os
 import json
-import boto3
 from datetime import datetime
+
+import boto3
 
 # Get invocation_id from manifest.json
 current_dir = os.path.dirname(os.path.abspath(__file__))

@@ -1,9 +1,14 @@
 Welcome to dbt project!
 
 ### Using the project
-Try running the following command:
+Build a docker image:
 ```
-docker run --rm -v /Users/$USER/.dbt:/.dbt --env-file .env my_dbt_project dbt run -s stg_customers+ && python3 upload_to_s3.py
+docker build --rm -t my_dbt_project . && docker image prune -f
+```
+
+Run dbt run/build command in a container:
+```
+docker run --rm -v /Users/$USER/.dbt:/.dbt --env-file .env my_dbt_project /bin/bash -c "dbt run -s stg_customers && python3 upload_to_s3.py"
 ```
 
 ### Uploading to S3 bucket
